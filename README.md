@@ -1,3 +1,14 @@
+We first provide the simplest implementation of MoMBS, named MoMBS-CIFAR-100-N, for paper review. All code will be uploaded after acceptance.
+MoMBS-CIFAR-100-N is based on CIFAR-100-N.
+
+**Quick try** 
+```python
+pyhon main.py --dataset cifar100 --noise_type noisy100 --is_human 
+```
+
+For ease of review, we replace the evaluation split with the test set. In our original setting, 5% of the training data was used for validation, and the remaining 95% for training. Since this version uses more training data, the reported performance is slightly higher than that in the paper. 
+
+
 **[Update 5/17/2023]** A [demo](https://github.com/Docta-ai/docta/blob/master/demo/docta_cifar10.ipynb) for automatically detecting label errors on CIFAR-N is availabel at [Docta](https://github.com/Docta-ai/docta) now!
 - **Docta**: A **Doc**tor for your da**ta**
 - An advanced data-centric AI platform that offers a comprehensive range of services aimed at detecting and rectifying issues in your data.
