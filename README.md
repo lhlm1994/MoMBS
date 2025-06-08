@@ -1,7 +1,8 @@
+### MoMBS-CIFAR-100-N 
 We first provide the simplest implementation of MoMBS, named MoMBS-CIFAR-100-N, for paper review. All code will be uploaded after acceptance.
 MoMBS-CIFAR-100-N is based on CIFAR-100-N.
 
-**Quick try** 
+*Quick try* 
 ```python
 pyhon main.py --dataset cifar100 --noise_type noisy100 --is_human 
 ```
@@ -9,7 +10,7 @@ pyhon main.py --dataset cifar100 --noise_type noisy100 --is_human
 For ease of review, we replace the evaluation split with the test set. In our original setting, 5% of the training data was used for validation, and the remaining 95% for training. Since this version uses more training data, the reported performance is slightly higher than that in the paper. 
 
 
-**More detatil about CIFAR-100-N is here:**
+*More detatil about CIFAR-100-N is here:*
 
 
 This repository is the official dataset release and Pytorch implementation of "[Learning with Noisy Labels Revisited: A Study Using Real-World Human Annotations](https://openreview.net/forum?id=TBWA6PLJZQm&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2022%2FConference%2FAuthors%23your-submissions))" accepted by ICLR2022. We collected and published re-annotated versions of the CIFAR-10 and CIFAR-100 data which contains real-world human annotation errors. We show how these noise patterns deviate from the classically assumed ones and what the new challenges are. The website of CIFAR-N is available at [http://www.noisylabels.com/](http://www.noisylabels.com/).
